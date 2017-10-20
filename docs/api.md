@@ -1,5 +1,26 @@
 # Editor
 ## 代码演示
+```
+import React, { Component } from 'react';
+import Editor from '../../src';
+class Demo1 extends Component {
+    componentDidMount(){
+
+    }
+    created=(editor)=>{
+
+    }
+    render() {
+        return (
+            <Editor created={this.created}>
+                这是内容
+            </Editor>
+        )
+    }
+}
+export default Demo1;
+```
+
 ## API
 |参数|说明|类型|默认值|
 |:---|:-----|:----|:------|
