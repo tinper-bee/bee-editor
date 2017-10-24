@@ -11,7 +11,7 @@
 
 react bee-editor component for tinper-bee
 
-some description...
+基于 wangEditor封装的react 富文本编辑器
 
 ## 依赖
 
@@ -31,6 +31,20 @@ some description...
 
 |参数|说明|类型|默认值|
 |:--|:---:|:--:|---:|
+|created|创建完成editor的回调，参数为editor实例|function|-|
+|disabled|是否禁用编辑器|boolean|false|
+|onChange|编辑器内容变化的回调函数，参数为变化后的内容|function|-|
+|zIndex|编辑器的z-index|number|10000|
+|pasteFilterStyle|当从其他网页复制文本内容粘贴到编辑器中，编辑器会默认过滤掉复制文本中自带的样式，默认开启此功能|boolean|true|
+|linkImgCallback|插入网络图片后的回调，参数为图片的url|function|-|
+|linkCheck|插入链接后的回调，参数为插入的文字和链接|function|-|
+|uploadImgServer|上传图片到服务器的地址，设置此值即打开上传图片到服务器的功能|string|-|
+|uploadImgShowBase64|是否启用base64编码显示图片(此参数和uploadImgServer只能存在一个)|boolean|false|
+|uploadImgMaxSize|限制图片大小，单位 kb (首先要设置uploadImgServer或者设置uploadImgShowBase64)|number|5120|
+|uploadImgParams|自定义上传图片参数，需打开上传图片到服务器的功能|object|-|
+|uploadFileName|自定义上传图片名称，需打开上传图片到服务器的功能|string|-|
+|uploadImgHeaders|自定义上传图片header，需打开上传图片到服务器的功能|object|-|
+|uploadImgHooks|上传图片的监听函数,详细说明见下，需打开上传图片到服务器的功能|object|-|
 
 #### 开发调试
 
