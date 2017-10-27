@@ -121,7 +121,7 @@ var Editor = function (_Component) {
     };
 
     Editor.prototype.render = function render() {
-        return _react2["default"].createElement('div', { id: this.state.id });
+        return _react2["default"].createElement('div', { id: this.state.id, className: 'u-editor' });
     };
 
     return Editor;

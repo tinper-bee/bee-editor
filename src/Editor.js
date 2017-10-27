@@ -98,7 +98,7 @@ class Editor extends Component {
     }
     render() {
         return (
-            <div id={this.state.id}>
+            <div id={this.state.id} className="u-editor">
 
             </div>
         )
